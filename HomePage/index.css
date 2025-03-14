@@ -2,6 +2,8 @@
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 @import url(https://fontawesome.com/icons/square-instagram?f=brands&s=solid);
 
+
+/*Estilo geral do body*/
 body {
     margin: 0;
     padding: 0;
@@ -9,6 +11,8 @@ body {
     background-color: black;
 }
 
+
+/*Div redes sociais*/
 .redes-sociais {
     display: flex;
     justify-content: center;
@@ -28,7 +32,8 @@ body {
 }
 
 
-div.headerContainer{
+/*Div h1 da header*/
+.divName > h1.nameHeader{
     font-family: 'Roboto';
     padding: 8px;
     margin-right: 20px;
@@ -37,6 +42,8 @@ div.headerContainer{
     justify-content: flex-end;
 }
 
+
+/*Div container central*/
 .container {
     position: absolute;
     top: 50%;
@@ -58,10 +65,9 @@ h1.nameCenter {
 
 h1.nameCenter:hover {
     color: #808080; /* Cor cinza */
-    transform: scale(1.2);
 }
 
-
+/*Animação*/
 @keyframes glow {
     0% {
         text-shadow: 0 0 10px white, 0 0 20px white, 0 0 30px white;
@@ -129,3 +135,14 @@ h1.nameCenter:hover {
     animation-delay: 0.6s;
     height: 95vh;
 }
+
+/*Estilo footer*/
+footer {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    background-color: black;
+    padding: 10px 0;
+    text-align: center;
+}
+
