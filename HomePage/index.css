@@ -7,7 +7,7 @@ body {
   width: 100%;
   margin: 0;
   height: 100vh;
-  background-color: #000;
+  background-color: #050505;
   overflow: hidden;
   position: relative;
 }
@@ -44,7 +44,7 @@ body {
 }
 
 .dev {
-  color: blue;
+  color: rgb(0, 4, 255);
 }
 
 .space {
@@ -92,7 +92,7 @@ h1.nameCenter {
     left: -250px;
     width: 250px;
     height: 100%;
-    background-color: #000000;
+    background-color: #050505;
     color: white;
     transition: 0.3s;
     padding-top: 60px;
