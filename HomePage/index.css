@@ -1,3 +1,4 @@
+@charset "UTF-08";
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 @import url(https://fontawesome.com/icons/square-instagram?f=brands&s=solid);
@@ -76,55 +77,55 @@ h1.nameCenter {
 
 /* Botão do menu */
 .menu-btn {
-    position: fixed;
-    top: 20px;
-    left: 20px;
-    font-size: 30px;
-    color: white;
-    cursor: pointer;
-    z-index: 1000;
-  }
-  
-  /* Menu lateral */
-  .sidebar {
-    position: fixed;
-    top: 0;
-    left: -250px;
-    width: 250px;
-    height: 100%;
-    background-color: #050505;
-    color: white;
-    transition: 0.3s;
-    padding-top: 60px;
-    z-index: 999;
-  }
-  
-  .sidebar ul {
-    list-style-type: none;
-    padding: 0;
-  }
-  
-  .sidebar ul li {
-    padding: 15px;
-    text-align: center;
-  }
-  
-  .sidebar ul li a {
-    font-family: "Roboto";
-    color: white;
-    text-decoration: none;
-    font-size: 20px;
-    display: block;
-  }
-  
-  .sidebar ul li a:hover {
-    text-decoration: underline;
-  }
-  
-  /* Quando o menu lateral está visível */
-  .sidebar.active {
-    left: 0;
-  }
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Menu lateral */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #050505;
+  color: white;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 999;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  font-family: "Roboto";
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Quando o menu lateral está visível */
+.sidebar.active {
+  left: 0;
+}
 
 .star {
   position: absolute;

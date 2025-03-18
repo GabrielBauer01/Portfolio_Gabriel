@@ -1,0 +1,114 @@
+@charset "UTF-08";
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+
+body {
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+  background-color: #050505;
+  overflow: hidden;
+  position: relative;
+}
+
+.divName > h1.nameHeader {
+  font-family: "Roboto";
+  font-size: clamp(1.8em, 4vw, 2.2em);
+  padding: 8px;
+  margin-right: 20px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.dev {
+  color: rgb(0, 4, 255);
+}
+
+.space {
+  color: transparent;
+}
+
+/*Section Container sobre*/
+
+.header-container_sobre {
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-container_sobre > h1 {
+  font-family: "Roboto";
+  font-size: 3em;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  letter-spacing: 2px;
+}
+
+.span-sobre {
+  font-family: "Roboto";
+  font-size: 1.8em;
+  color: #007bff;
+}
+
+.container-left_sobre {
+  display: flex;
+  justify-content: left;
+  background-color: white;
+  flex-direction: column;
+  width: 350px;
+}
+
+/* Botão do menu */
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 30px;
+  color: white;
+  cursor: pointer;
+  z-index: 1000;
+}
+
+/* Menu lateral */
+.sidebar {
+  position: fixed;
+  top: 0;
+  left: -250px;
+  width: 250px;
+  height: 100%;
+  background-color: #050505;
+  color: white;
+  transition: 0.3s;
+  padding-top: 60px;
+  z-index: 999;
+}
+
+.sidebar ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.sidebar ul li {
+  padding: 15px;
+  text-align: center;
+}
+
+.sidebar ul li a {
+  font-family: "Roboto";
+  color: white;
+  text-decoration: none;
+  font-size: 20px;
+  display: block;
+}
+
+.sidebar ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Quando o menu lateral está visível */
+.sidebar.active {
+  left: 0;
+}
