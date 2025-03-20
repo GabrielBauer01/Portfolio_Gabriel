@@ -1,16 +1,19 @@
 @charset "UTF-08";
+/* Importação de fontes */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
+/* Estilos do body */
 body {
   width: 100%;
   margin: 0;
   height: 100vh;
   background-color: #050505;
-  overflow: hidden;
+  /* overflow: hidden; */
   position: relative;
 }
 
+/* Estilo do cabeçalho da página */
 .divName > h1.nameHeader {
   font-family: "Roboto";
   font-size: clamp(1.8em, 4vw, 2.2em);
@@ -21,16 +24,22 @@ body {
   justify-content: flex-end;
 }
 
+/* Estilo do texto ".dev" */
 .dev {
   color: rgb(0, 4, 255);
 }
 
+/* Estilo do espaço (transparente) no título */
 .space {
   color: transparent;
 }
 
-/*Section Container sobre*/
+/*Section sobre*/
+.container-sobre {
+  display: flex;
+}
 
+/* Container do header da página "Sobre" */
 .header-container_sobre {
   justify-content: center;
   display: flex;
@@ -38,6 +47,7 @@ body {
   flex-direction: column;
 }
 
+/* Título principal da página "Sobre" */
 .header-container_sobre > h1 {
   font-family: "Roboto";
   font-size: 3em;
@@ -47,21 +57,51 @@ body {
   letter-spacing: 2px;
 }
 
+/* Estilo do texto "Conheça mais" */
 .span-sobre {
   font-family: "Roboto";
   font-size: 1.8em;
   color: #007bff;
 }
 
+/* Container do lado esquerdo da seção "Sobre" */
 .container-left_sobre {
   display: flex;
   justify-content: left;
-  background-color: white;
+  background-color: transparent;
   flex-direction: column;
-  width: 350px;
+  width: 50%;
+  padding: 20px;
 }
 
-/* Botão do menu */
+/* Título dentro do container esquerdo da seção "Sobre" */
+.container-left_sobre > h1 {
+  font-family: "Roboto";
+  font-size: 32px;
+  color: white;
+  text-align: left;
+}
+
+/* Parágrafos dentro do container esquerdo da seção "Sobre" */
+.container-left_sobre > p {
+  font-size: 17.6px;
+  text-align: justify;
+  font-family: "Roboto";
+  color: #c9c9c9;
+}
+
+/*Container do lado direito (Somente imagem)*/
+.skills-image {
+  display: flex;
+}
+
+.skills-image > img {
+  padding: 48px;
+  height: 215px;
+  width: 700px;
+}
+
+/* Botão de menu */
 .menu-btn {
   position: fixed;
   top: 20px;
@@ -72,7 +112,7 @@ body {
   z-index: 1000;
 }
 
-/* Menu lateral */
+/* Estilo do menu lateral */
 .sidebar {
   position: fixed;
   top: 0;
@@ -86,16 +126,19 @@ body {
   z-index: 999;
 }
 
+/* Estilo da lista do menu lateral */
 .sidebar ul {
   list-style-type: none;
   padding: 0;
 }
 
+/* Estilo dos itens de lista no menu lateral */
 .sidebar ul li {
   padding: 15px;
   text-align: center;
 }
 
+/* Estilo dos links no menu lateral */
 .sidebar ul li a {
   font-family: "Roboto";
   color: white;
@@ -104,11 +147,42 @@ body {
   display: block;
 }
 
+/* Efeito do hover nos links do menu lateral */
 .sidebar ul li a:hover {
   text-decoration: underline;
 }
 
-/* Quando o menu lateral está visível */
+/* Estilo do menu lateral quando ativo */
 .sidebar.active {
   left: 0;
+}
+
+/* Ajustes para responsividade */
+@media screen and (max-width: 768px) {
+  .container-sobre {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .container-left_sobre {
+    width: 90%;
+    text-align: left;
+    padding: 20px;
+  }
+
+  .skills-image {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+ /* Ajustes para responsividade */
+@media screen and (max-width: 768px) {
+  .skills-image > img {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+    padding: 20px;
+  }
+}
 }
