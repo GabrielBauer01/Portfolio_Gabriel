@@ -2,6 +2,7 @@
 /* Importação de fontes */
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(https://fontawesome.com/icons/angle-right?s=solid);
 
 /* Estilos do body */
 body {
@@ -9,7 +10,7 @@ body {
   margin: 0;
   height: 100vh;
   background-color: #050505;
-  /* overflow: hidden; */
+  overflow-x: hidden;
   position: relative;
 }
 
@@ -101,6 +102,93 @@ body {
   width: 700px;
 }
 
+/*Habilidades Container*/
+.habilidades-sobre {
+  padding: 20px;
+}
+
+.habilidades-sobre > span {
+  font-family: "Roboto";
+  font-size: 32px;
+  color: #007bff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.habilidades-sobre > h1 {
+  font-family: "Roboto";
+  font-size: 32px;
+  color: white;
+  margin-top: 50px;
+}
+
+.habilidades-sobre > p {
+  font-size: 17.6px;
+  text-align: justify;
+  font-family: "Roboto";
+  color: #c9c9c9;
+}
+
+.soft-skills__sobre {
+  padding: 20px;
+  padding-top: 0px;
+  display: flex;
+  margin-left: 0px;
+  margin-right: 0px;
+}
+
+.span-SoftSkills > h1 {
+  font-family: "Roboto";
+  font-size: 25px;
+  color: #007bff;
+  margin-top: 0px;
+  padding-left: 20px;
+}
+
+.soft-skills__sobre > ul {
+  font-size: 17.6px;
+  text-align: justify;
+  font-family: "Roboto";
+  color: #c9c9c9;
+  width: 100%;
+  list-style: none;
+}
+
+.soft-skills__sobre > ul > li > i {
+  color: #007bff;
+}
+
+.download-cv {
+  display: flex;
+  justify-content: center;
+}
+
+footer > p {
+  color: #c9c9c9;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+}
+
+.direitos-footer{
+  margin-bottom: 0px;
+}
+
+p.bauerdev-footer{
+  margin-top: 0px;
+}
+
+.bauerdev-footer > span {
+  color: #007bff;
+  font-family: "Roboto";
+  margin-top: 0px;
+}
+
+span.space-footer{
+  color: transparent;
+}
+
 /* Botão de menu */
 .menu-btn {
   position: fixed;
@@ -176,13 +264,13 @@ body {
     justify-content: center;
   }
 
- /* Ajustes para responsividade */
-@media screen and (max-width: 768px) {
-  .skills-image > img {
-    width: 100%;
-    max-width: 100%;
-    height: auto;
-    padding: 20px;
+  /* Ajustes para responsividade */
+  @media screen and (max-width: 768px) {
+    .skills-image > img {
+      width: 100%;
+      max-width: 100%;
+      height: auto;
+      padding: 20px;
+    }
   }
-}
 }
