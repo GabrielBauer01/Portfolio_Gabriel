@@ -38,73 +38,92 @@ body {
 /*Container do header da página "Services"*/
 
 .header-container_services {
-    justify-content: center;
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-  }
-  
-  /* Título principal da página "Sobre" */
-  .header-container_services > h1 {
-    font-family: "Roboto";
-    font-size: 3em;
-    color: white;
-    margin-top: 5px;
-    margin-bottom: 0px;
-    letter-spacing: 2px;
-  }
-  
-  /* Estilo do texto "Conheça mais" */
-  .span-services {
-    font-family: "Roboto";
-    font-size: 1.8em;
-    color: #007bff;
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+/* Título principal da página "Sobre" */
+.header-container_services > h1 {
+  font-family: "Roboto";
+  font-size: 3em;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  letter-spacing: 2px;
+}
+
+/* Estilo do texto "Conheça mais" */
+.span-services {
+  font-family: "Roboto";
+  font-size: 1.8em;
+  color: #007bff;
+}
+
+/* Container dos cards */
+.container-cards__services {
+  display: flex;
+  flex-wrap: wrap; /* Permite quebra de linha */
+  justify-content: center; /* Centraliza os itens */
+  gap: 50px; /* Espaço entre os cards */
+  padding: 20px; /* Margem interna para não encostar nas laterais */
+  margin-top: 30px;
+}
+
+/* Cards individuais */
+.cards-services {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  background-color: #151515;
+  height: 300px;
+  width: 320px;
+  border-radius: 10px; /* Deixa os cantos arredondados */
+}
+
+/* Animção hover */
+.cards-services:hover{
+  background-color: #007bff;
+  transition: 1.5s; 
+}
+
+/* Texto dos cards */
+.cards-services > p{
+  font-family: 'Roboto';
+  text-align: center;
+  padding: 10px;
+}
+
+/* Images Cards Individuais */
+.cards-services > img{
+  width: 70px;
+  height: 70px;
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+  .container-cards__services {
+    justify-content: space-around;
   }
 
-  /* Container dos cards */
-.container-cards__services {
-    display: flex;
-    flex-wrap: wrap; /* Permite quebra de linha */
-    justify-content: center; /* Centraliza os itens */
-    gap: 50px; /* Espaço entre os cards */
-    padding: 20px; /* Margem interna para não encostar nas laterais */
-    margin-top: 30px;
-  }
-  
-  /* Cards individuais */
   .cards-services {
-    display: flex;
-    justify-content: center;
+    width: 45%; /* Ajusta para ocupar 45% da largura */
+  }
+}
+
+@media (max-width: 480px) {
+  .container-cards__services {
+    flex-direction: column;
     align-items: center;
-    background-color: #151515;
-    height: 300px;
-    width: 320px;
-    border-radius: 10px; /* Deixa os cantos arredondados */
+    gap: 20px;
   }
-  
-  /* Responsividade */
-  @media (max-width: 768px) {
-    .container-cards__services {
-      justify-content: space-around;
-    }
-  
-    .cards-services {
-      width: 45%; /* Ajusta para ocupar 45% da largura */
-    }
+
+  .cards-services {
+    width: 100%; /* Ocupa 100% da largura para telas menores */
   }
-  
-  @media (max-width: 480px) {
-    .container-cards__services {
-      flex-direction: column;
-      align-items: center;
-      gap: 20px;
-    }
-  
-    .cards-services {
-      width: 100%; /* Ocupa 100% da largura para telas menores */
-    }
-  }
-  
+}
 
 /* Botão de menu */
 .menu-btn {
