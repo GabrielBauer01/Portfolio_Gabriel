@@ -1,0 +1,117 @@
+@charset "UTF-08";
+/* Importação de fontes */
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
+@import url(https://fontawesome.com/icons/angle-right?s=solid);
+
+/* Estilos do body */
+body {
+  width: 100%;
+  margin: 0;
+  height: 100vh;
+  background-color: #050505;
+  overflow-x: hidden;
+  position: relative;
+}
+
+/* Estilo do cabeçalho da página */
+.divName > h1.nameHeader {
+  font-family: "Roboto";
+  font-size: clamp(1.8em, 4vw, 2.2em);
+  padding: 8px;
+  margin-right: 20px;
+  color: white;
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Estilo do texto ".dev" */
+.dev {
+  color: rgb(0, 4, 255);
+}
+
+/* Estilo do espaço (transparente) no título */
+.space {
+  color: transparent;
+}
+
+/* Container header Projects */
+.header-container_projects{
+  justify-content: center;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+
+.header-container_projects > h1 {
+  font-family: "Roboto";
+  font-size: 3em;
+  color: white;
+  margin-top: 5px;
+  margin-bottom: 0px;
+  letter-spacing: 2px;
+}
+
+/* Estilo do texto "Conheça mais" */
+.span-projects {
+  font-family: "Roboto";
+  font-size: 1.8em;
+  color: #007bff;
+}
+
+/* Botão de menu */
+.menu-btn {
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+    z-index: 1000;
+  }
+  
+  /* Estilo do menu lateral */
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: -250px;
+    width: 250px;
+    height: 100%;
+    background-color: #050505;
+    color: white;
+    transition: 0.3s;
+    padding-top: 60px;
+    z-index: 999;
+  }
+  
+  /* Estilo da lista do menu lateral */
+  .sidebar ul {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  /* Estilo dos itens de lista no menu lateral */
+  .sidebar ul li {
+    padding: 15px;
+    text-align: center;
+  }
+  
+  /* Estilo dos links no menu lateral */
+  .sidebar ul li a {
+    font-family: "Roboto";
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    display: block;
+  }
+  
+  /* Efeito do hover nos links do menu lateral */
+  .sidebar ul li a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Estilo do menu lateral quando ativo */
+  .sidebar.active {
+    left: 0;
+  }
+  
