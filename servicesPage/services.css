@@ -114,6 +114,7 @@ body {
 
 /* Section orçamento */
 .orçamento-container_services{
+  margin-top: 50px;
   justify-content: center;
   display: flex;
   align-items: center;
@@ -216,6 +217,10 @@ span.space-footer {
   .cards-services > p {
     margin-left: 10px;
     margin-right: 10px;
+  }
+
+  .orçamento-container_services{
+    margin-top: 15px;
   }
 
   .orçamento {

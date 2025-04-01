@@ -560,3 +560,10 @@ footer {
   padding: 10px 0;
   text-align: center;
 }
+
+/* Responsividade */
+@media (max-width: 480px){
+  .container > .nameCenter{
+    letter-spacing: 1px;
+  }
+}
